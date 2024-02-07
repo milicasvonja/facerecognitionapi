@@ -32,6 +32,8 @@ app.get("/", (req, res) => {
   //res.send(database.users);
 });
 
+console.log("check github");
+
 app.post("/signin", (req, res) => {
   db.select("email", "hash")
     .from("login")
